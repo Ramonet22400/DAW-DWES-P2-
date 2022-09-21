@@ -16,6 +16,7 @@
              th,td,tr{
                  padding: 15px;
                  background-color: black;
+
              }
 
          </style>
@@ -23,16 +24,18 @@
         <tr>
             <?php
 
-                for($i = 0; $i <= 2; $i++){
+                for($indice = 0; $indice <= 8; $indice++){
 
-                    for($f = 0; $f <=9; $f++){
+                    for($fila = 0; $fila <=8; $fila++){
+                        echo('&nbsp&nbsp&nbsp&nbsp');
+                        echo('<td>');
 
-                        echo('<th>');
                     }
 
-                    for ($columna = 0; $columna <=9; $columna++){
-
+                    for ($columna = 0; $columna <=8; $columna++){
+                        echo('&nbsp&nbsp&nbsp&nbsp');
                         echo('<tr>');
+
                     }
                 }
 
