@@ -18,7 +18,7 @@
 
                 for($fila = 1; $fila <= $altura; $fila++){
 
-                    echo('<tr>');
+
 
                     for($columna = 0;  $columna <= $altura; $columna++){
                         if(($fila % 2 == 0 && $columna % 2 !=0) || ($fila % 2 !=0 && $columna % 2 == 0)){
@@ -32,8 +32,6 @@
                         }
                     }
                 }
-
-
             ?>
 </table>
 </body>
