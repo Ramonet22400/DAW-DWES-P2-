@@ -11,38 +11,30 @@
 <h2> Tablero de ajedrez: </h2>
 
 <table>
-         <style>
-
-             th,td,tr{
-                 padding: 15px;
-                 background-color: black;
-
-             }
-
-         </style>
-
-        <tr>
             <?php
 
-                for($indice = 0; $indice <= 8; $indice++){
+                $altura = 9;
+                echo '<border = 1px>';
 
-                    for($fila = 0; $fila <=8; $fila++){
-                        echo('&nbsp&nbsp&nbsp&nbsp');
-                        echo('<td>');
+                for($fila = 1; $fila <= $altura; $fila++){
 
-                    }
+                    echo('<tr>');
 
-                    for ($columna = 0; $columna <=8; $columna++){
-                        echo('&nbsp&nbsp&nbsp&nbsp');
-                        echo('<tr>');
+                    for($columna = 0;  $columna <= $altura; $columna++){
+                        if(($fila % 2 == 0 && $columna % 2 !=0) || ($fila % 2 !=0 && $columna % 2 == 0)){
 
+                            echo('<td style="padding: 10px; text-align:left; background-color:black;"> </td>');
+
+                        } else {
+
+                            echo('<td style="padding: 10px; text-align:left; background-color:white;"> </td>');
+
+                        }
                     }
                 }
 
 
             ?>
-        </tr>
-
 </table>
 </body>
 </html>
