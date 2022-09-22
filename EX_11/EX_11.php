@@ -17,7 +17,6 @@ function ma($texto){
     }
 }
 
-
 $texto = "hola muy buenas";
 
 ma($texto);
