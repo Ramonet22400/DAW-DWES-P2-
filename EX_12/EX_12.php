@@ -14,6 +14,6 @@ function primus ($numero){
     }
 }
 
-$numero = 5;
+$numero = 1;
 
 primus($numero);

@@ -5,17 +5,19 @@
 
 function ma($texto){
 
-    if($texto==strtoupper($texto)){
 
-        echo("La cadena contiene mayusculas.");
+    if($texto == strtoupper($texto)){
+        echo('Toda las letras son en mayúsculas.');
 
-    } else {
+    } else if($texto == strtolower($texto)){
 
-        echo("La cadena no contiene mayusculas.");
+        echo('Todas las letras son en minúsculas.');
+    }else{
+        echo ('La frase contiene tanto letras en mayúscula como en minúscula');
     }
-
 }
 
-$texto = "HOLA";
+
+$texto = "hola muy buenas";
 
 ma($texto);
