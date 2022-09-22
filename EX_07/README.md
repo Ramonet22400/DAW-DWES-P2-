@@ -64,8 +64,9 @@ cuyo caso imprima un cuadrado de color negro.
 |---------------------------------------|
 | ($fila % 2 == 0 && $columna % 2 !=0)  |
 
-**Impresión del recuadro negro** 
-echo('<td style="padding: 10px; text-align:left; background-color:black;"> </td>');
+| **Impresión del recuadro negro:**                                              |
+|--------------------------------------------------------------------------------|
+| echo('td style="padding: 10px; text-align:left; background-color:black;" /td') |
 
 En el caso de que esta condición no se cumpla pasaremos a la segunda parte del *if*,
 esta preguntara lo opuesto. Si la *$fila* es impar y la *$columna* par, imprime por
@@ -76,8 +77,9 @@ pantalla el cuadrado de color blanco.
 |--------------------------------------|
 | ($fila % 2 !=0 && $columna % 2 == 0) |
 
-**Impresión del recuadro blanco**
-echo('<td style="padding: 10px; text-align:left; background-color:white;"> </td>');
+| **Impresión del recuadro blanco:**                                             |
+|--------------------------------------------------------------------------------|
+| echo('td style="padding: 10px; text-align:left; background-color:white;" /td') |
 
 De esta forma si se repite este *for* con el *if* dentro finalmente imprimiremos un 
 tablero en la pantalla del IDE. 
