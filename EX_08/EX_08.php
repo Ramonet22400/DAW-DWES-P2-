@@ -6,7 +6,7 @@
 function triangulito($altura, $base)
 {
    $resultado = $altura * $base / 2;
-   echo($resultado);
+   echo('El area del triangulo es de: '.$resultado);
 
 }
 
